@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Center for Population and Gender Studies, NTU</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/animate.css">
+    <style>
+        .bg-cover{
+            background-size: cover;
+            background-position: center 90% ;
+        }
+        .carousel-content{
+            min-height: 200px;
+            color: black;
+            padding: 0px 10px;
+        }
+        
+        #text-carousel {
+            width: 100%;
+            height: auto;
+        }
+
+        nav ul.navbar-nav li.dropdown:hover > #dropdown-menu {
+            display: block;    
+        }
+
+        /* .nav-border{
+            border-top: 0px;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-width: 0.1px;
+            border-color: grey;
+            border-style: solid;
+        }    */
+
+    </style>
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <div class="container d-flex align-items-center">
+            <div class="animated fadeInLeft">
+                <img src="./img/Logo2.png" alt="logo" style="width:125px;">
+                <h2 class="d-inline-block">國立台灣大學人口與性別研究中心</h2>
+            </div>
+            <div class="btn-group ml-auto" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-secondary btn-sm">中文</button>
+                <button type="button" class="btn btn-outline-secondary btn-sm">English</button>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 justify-content-between">
+                    <li class="nav-item active dropdown nav-border">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            中心介紹
+                        </a>
+                        <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#">中心工作</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">中心動態</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            活動訊息
+                        </a>
+                        <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            學分學程
+                        </a>
+                        <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            出版品
+                        </a>
+                        <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            獎助金
+                        </a>
+                        <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            相關網站
+                        </a>
+                        <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="container-fluid bg-cover" style="background-image:url(./img/banner.jpg); min-height: 600px;">
+    </div>
+
+    <!-- Information 最新消息、學術活動、人口相關新聞-->
+    <div id="Information" class="container-fluid mt-3 px-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card w-100 h-100 ">
+                    <!-- latest News -->
+                    <div class="card-header">最新消息</div>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th>中心活動</th>
+                                    <td>高齡化與社區發展專題演講</td>
+                                </tr>
+                                <tr>
+                                    <th>學程</th>
+                                    <td>台大婦女學程課表更新！</td>
+                                </tr>
+                                <tr>
+                                    <th>學程</th>
+                                    <td>台大人口學程課表更新！</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- 學術活動 -->
+            <div class="col-lg-4">
+                <div class="card w-100 h-100">
+                    <div class="card-header bg-light">學術活動</div>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th>臺大婦女研究室性平季：當代中國婦女運動攝影展</th>
+                                </tr>
+                                <tr>
+                                    <td>亞洲酷兒比較研究工作坊</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card w-100">
+                    <div class="card-header bg-light">人口相關新聞</div>
+                    <div class="card-body bg-info">
+                        <div id="text-carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#text-carousel" data-slide-to="0" class="active" ></li>
+                                <li data-target="#text-carousel" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-content">
+                                       
+                                        <a href="https://news.pts.org.tw/article/359530" class="h4">偏鄉醫療不足 原民餘命較全國少 8.34 歲</a>
+                                        <p>2017.05.24 公視
+                                            原民會於立法院備詢時表示，原住民平均餘命較低的原因，主要是因為原住民鄉的部落，大多處於偏遠地區，以及醫療資源缺乏設備不足，偏鄉和離島存在同樣問題。衛福部表示會強化原住民族地區醫療照護設施。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-content">
+                                     
+                                            <a href="https://www.epochtimes.com/b5/17/5/24/n9176965.htm" class="h4">研究：弱勢家庭孩子更易早熟 或致健康問題</a>
+                                            <p>2017.05.24 大紀元 墨爾本默多克兒童研究所（Murdoch Childrens Research
+                                                Institute）的最新研究發現，弱勢家庭的孩子更容易早熟，這可能會給他們以後的生活帶來嚴重的健康問題。
+                                            </p>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <script>
+            $('#text-carousel').carousel({
+                interval: 2000
+            })
+        </script>
+</body>
+
+</html>
