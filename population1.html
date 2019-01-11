@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
     <style>
+        *{
+            font-family: 'Noto Serif TC', serif;
+        }
+
         .bg-cover{
             background-size: cover;
             background-position: center 90% ;
@@ -29,14 +34,174 @@
             display: block;    
         }
 
-        /* .nav-border{
-            border-top: 0px;
-            border-bottom: 0px;
-            border-left: 0px;
-            border-width: 0.1px;
-            border-color: grey;
-            border-style: solid;
-        }    */
+        .bg-purple{
+            background-color: #6B3091;
+        }
+
+        .bg-light-purple{
+            background-color: #ebe1f2;
+        }
+
+        .border-bottom-purple{
+            border-bottom: 4px solid #6B3091;
+        }
+
+        .btn-outline-purple-active{
+            color: #fff;
+            background-color: #904abf;
+            border-color: #6B3091;
+        }
+
+        .btn-outline-purple{
+            border-color: #6B3091;
+            background-color: transparent;
+            color:#904abf;
+        }
+
+        .btn-outline-purple:hover{
+            color: #fff;
+            background-color: #904abf;
+            border-color: #6B3091;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: rgba(0,0,0,.8);
+        }
+
+        .footer-logo-ntu{
+            width: 90px;
+        }
+        .footer-logo-ntu-320{
+            width: 45px;
+        }
+        .people-logo{
+            width:65px; 
+            height:65px;
+        }
+
+        
+        @media (max-width:1440px){
+            #banner{
+                min-height: 600px;
+            }
+            #Information{
+                padding: 0 48px;
+            } 
+
+            #logo{
+                width:125px;
+            }
+        }
+
+        @media (max-width: 768px){
+            .h3-md{
+                font-size: 1.6em;
+            }
+            #banner{
+                min-height: 400px;
+            }
+          
+            #Information{
+                padding: 0 15px;
+            }
+
+            #news{
+                min-height: 360px;
+            }
+        }
+         
+        @media (max-width: 425px){
+            .h3-md{
+                font-size: 1.2em;
+            }
+
+            #banner{
+                min-height: 300px;
+            }
+            
+            #news1-2, #news2-2{
+                display: none;
+            }
+            
+            #Information{
+                padding: 0 15px;
+            }
+            
+            #news{
+                min-height: 400px;
+            }
+
+            #language{
+                display: none;
+            }
+
+            #logo{
+                width: 70px;
+                height: 70px;
+            }
+
+            .people-logo{
+                width: 60px;
+                height: 60px;
+            }
+    
+        }
+
+        @media (max-width: 375px){
+            .h3-md{
+                font-size: 1.2em;
+            }
+            #logo{
+                width: 45px;
+                height: 45px;
+            }
+
+            .footer-logo-ntu{
+                position: relative;
+                right: 10px;
+                top: 10px;
+            }
+
+            .people-logo{
+                width: 60px;
+                height: 60px;
+                position: relative;
+                right: 5px;
+                top: 5px;
+            }
+
+        }
+
+        @media (max-width: 320px){
+            .h3-md{
+                font-size: 1em;
+            }
+            #logo{
+                width: 45px;
+                height: 45px;
+            }
+            .footer-logo-ntu{
+                width: 75px;
+                position: relative;
+                right: 10px;
+                top: 10px;
+            
+            }
+            .people-logo{
+                width:55px; 
+                height:55px;
+                position: relative;
+                right: 10px;
+                top: 10px;
+            
+            }
+
+            #news{
+                min-height: 480px;
+            }
+        }
+        
+        
 
     </style>
 </head>
@@ -45,20 +210,23 @@
     <!-- Header  -->
     <header>
         <div class="container d-flex align-items-center">
-            <div class="animated fadeInLeft">
-                <img src="./img/Logo2.png" alt="logo" style="width:125px;">
-                <h2 class="d-inline-block">國立台灣大學人口與性別研究中心</h2>
+            <div class="d-inline-block animated fadeInLeft">
+                <a href="#"><img id="logo" src="./img/Logo2.png"  alt="logo"></a>
             </div>
-            <div class="btn-group ml-auto" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-outline-secondary btn-sm">中文</button>
-                <button type="button" class="btn btn-outline-secondary btn-sm">English</button>
+            <div class="d-inline-block animated fadeInLeft mt-2">
+                <div class="d-inline-block h2 h3-md">國立台灣大學人口與性別研究中心</div>
+            </div>
+
+            <div id="language" class="btn-group ml-auto" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-purple-active btn-sm ">中文</button>
+                <button type="button" class="btn btn-outline-purple btn-sm">English</button>
             </div>
         </div>
 
     </header>
 
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar navbar-expand-lg sticky-top bg-light navbar-light ">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,82 +235,87 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav w-100 justify-content-between">
-                    <li class="nav-item active dropdown nav-border">
-                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             中心介紹
                         </a>
                         <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">中心簡介</a>
+                            <a class="dropdown-item" href="#">中心架構</a>
+                            <a class="dropdown-item" href="#">中心成員</a>
+                            <a class="dropdown-item" href="#">聯絡方式</a>
                         </div>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="#">中心工作</a>
+                        <a class="nav-link nav-link-ltr" href="#">中心工作</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#">中心動態</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             活動訊息
                         </a>
                         <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">人口與性別新聞</a>
+                            <a class="dropdown-item" href="#">學術活動</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             學分學程
                         </a>
                         <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">人口學分學程</a>
+                            <a class="dropdown-item" href="#">婦女與性別研究學分學程</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             出版品
                         </a>
                         <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">人口學刊</a>
+                            <a class="dropdown-item" href="#">女學學誌</a>
+                            <a class="dropdown-item" href="#">婦研縱橫</a>
+                            <a class="dropdown-item" href="#">人口地圖集</a>
+                            <a class="dropdown-item" href="#">台灣戰後人口普查地圖集</a>
+                            <a class="dropdown-item" href="#">人口筆記書</a>
+                            <a class="dropdown-item" href="#">電子報</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             獎助金
                         </a>
                         <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">台灣婦女與性別研究 <br> 碩博士論文計畫獎助金<small> 申請辦法</small> </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">歷年獲獎名單</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             相關網站
                         </a>
                         <div id='dropdown-menu' class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">相關系所</a>
+                            <a class="dropdown-item" href="#">政府單位</a>
+                            <a class="dropdown-item" href="#">研究機構</a>
+                            <a class="dropdown-item" href="#">國際組織</a>
+                            <a class="dropdown-item" href="#">國際訪客資源</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <div id="language-toggle" class="btn-group mt-1" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-secondary active btn-sm ">中文</button>
+                            <button type="button" class="btn btn-outline-secondary btn-sm">English</button>
                         </div>
                     </li>
                 </ul>
@@ -151,16 +324,18 @@
     </nav>
 
     <!-- Banner -->
-    <div class="container-fluid bg-cover" style="background-image:url(./img/banner.jpg); min-height: 600px;">
-    </div>
+    
+    <div id="banner" class="container-fluid bg-cover mb-3" style="background-image:url(./img/banner.jpg); top:-56px;"></div>
+
+
 
     <!-- Information 最新消息、學術活動、人口相關新聞-->
-    <div id="Information" class="container-fluid mt-3 px-5">
+    <div id="Information" class="container-fluid " style="min-height:400px;">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="card w-100 h-100 ">
                     <!-- latest News -->
-                    <div class="card-header">最新消息</div>
+                    <div class="card-header bg-purple text-white text-center h5">最新消息</div>
                     <div class="card-body">
                         <table class="table table-hover">
                             <tbody>
@@ -182,9 +357,9 @@
                 </div>
             </div>
             <!-- 學術活動 -->
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="card w-100 h-100">
-                    <div class="card-header bg-light">學術活動</div>
+                    <div class="card-header bg-purple text-white text-center h5">學術活動</div>
                     <div class="card-body">
                         <table class="table table-hover">
                             <tbody>
@@ -200,33 +375,55 @@
                 </div>
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-12 mt-3">
                 <div class="card w-100">
-                    <div class="card-header bg-light">人口相關新聞</div>
-                    <div class="card-body bg-info">
+                    <div class="card-header bg-purple text-white text-center h5">人口相關新聞</div>
+                    <div class="card-body">
                         <div id="text-carousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#text-carousel" data-slide-to="0" class="active" ></li>
+                                <li data-target="#text-carousel" data-slide-to="0" class="active"></li>
                                 <li data-target="#text-carousel" data-slide-to="1"></li>
                             </ol>
-                            <div class="carousel-inner">
+                            <div id="news" class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="carousel-content">
-                                       
-                                        <a href="https://news.pts.org.tw/article/359530" class="h4">偏鄉醫療不足 原民餘命較全國少 8.34 歲</a>
-                                        <p>2017.05.24 公視
+
+                                        <a href="https://news.pts.org.tw/article/359530" class="h4">偏鄉醫療不足 原民餘命較全國少
+                                            8.34 歲</a>
+                                        <p id="news1-1">2017.05.24 公視
                                             原民會於立法院備詢時表示，原住民平均餘命較低的原因，主要是因為原住民鄉的部落，大多處於偏遠地區，以及醫療資源缺乏設備不足，偏鄉和離島存在同樣問題。衛福部表示會強化原住民族地區醫療照護設施。
+                                        
+                                            據《太陽先驅報》報導，墨爾本默多克兒童研究所（Murdoch Childrens Research
+                                            Institute）的最新研究發現，在弱勢家庭中長大的男孩在 10 到 11 歲之間進入青春期的可能性是同齡人的 4 倍以上，女孩的可能性是兩倍。
+                                        
+                                        </p> 
+                                        <p id="news1-2"> 
+                                            雖然家庭條件不好導致兒童過早進入青春期的確切原因尚不清楚，但該研究報告的主要作者孫英（Ying
+                                            Sun，音譯）副教授表示，這可能與長期的生活壓力引起的應激激素反應有關。
+
+                                            該研究調查了 3700 多名兒童，首次調查是在他們 1 歲之前，等到他們長到 10 歲到 11 歲時再次對他們進行調查；結果發現，19％的男孩和
+                                            21％的女孩提前進入了青春期。
                                         </p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="carousel-content">
-                                     
-                                            <a href="https://www.epochtimes.com/b5/17/5/24/n9176965.htm" class="h4">研究：弱勢家庭孩子更易早熟 或致健康問題</a>
-                                            <p>2017.05.24 大紀元 墨爾本默多克兒童研究所（Murdoch Childrens Research
-                                                Institute）的最新研究發現，弱勢家庭的孩子更容易早熟，這可能會給他們以後的生活帶來嚴重的健康問題。
-                                            </p>
-                                
+
+                                        <a href="https://www.epochtimes.com/b5/17/5/24/n9176965.htm" class="h4">研究：弱勢家庭孩子更易早熟
+                                            或致健康問題</a>
+                                        <p id="news2-1">
+                                            2017.05.24 大紀元 墨爾本默多克兒童研究所（Murdoch Childrens Research
+                                            Institute）的最新研究發現，弱勢家庭的孩子更容易早熟，這可能會給他們以後的生活帶來嚴重的健康問題。
+                                    
+                                        </p>
+                                        <p id="news2-2">
+                                            據《太陽先驅報》報導，墨爾本默多克兒童研究所（Murdoch Childrens Research
+                                            Institute）的最新研究發現，在弱勢家庭中長大的男孩在 10 到 11 歲之間進入青春期的可能性是同齡人的 4 倍以上，女孩的可能性是兩倍。
+
+                                            雖然家庭條件不好導致兒童過早進入青春期的確切原因尚不清楚，但該研究報告的主要作者孫英（Ying
+                                            Sun，音譯）副教授表示，這可能與長期的生活壓力引起的應激激素反應有關。
+                                        </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -236,24 +433,80 @@
             </div>
 
         </div>
+    </div>
+    <footer>
+        <div class="container-fluid bg-light font-weight-light">
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md-6 flex-column">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-row">
+                                    <div class="col-3">
+                                        <img id="footer-logo-ntu" class="footer-logo-ntu" src="./img/Logo2.png" alt="logo2">
+                                        
+                                    </div>
+                                    <div class="col-9 pt-4">
+                                        <p class="d-inline-block">
+                                            國立台灣大學人口與性別研究中心 <br>
+                                            Center for Population and Genger Studies
+                                        </p>
+                                    </div>
+                                </div>
 
-        <footer>
 
-        </footer>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-row">
+                                    <div class="col-3">
+                                        <img class=" ml-2 people-logo" src="./img/people_logo.png" alt="people_logo" >
+                                    </div>
+                                    <div class="col-9 pt-2">
+                                        <p class="d-inline-block">
+                                            台灣人口學會 <br>
+                                            Population Assciation of Taiwan
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+                    </div>
+                    <div class="col-md-6 py-4 ">
+                        <div><span class="badge badge-secondary my-2 font-weight-light" style="font-size:16px;">E-Mail
+                            </span> : psc@ntu.edu.tw</div>
+                        <div><span class="badge  badge-secondary my-2 font-weight-light" style="font-size:16px;">傳真號碼
+                                (Fax)</span>：02-2363-9565</div>
+                        <div><span class="badge  badge-secondary my-2 font-weight-light" style="font-size:16px;">電話總機
+                                (Phone)</span>：02-3366-3400</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center py-2 font-weight-light text-white " style="background-color: #ababa9; font-size: 10px;">
+            國立臺灣大學人口與性別中心 Center for Population and Genfer Studies, National Taiwan University <br>
+            10617 臺北市羅斯福路四段一號 No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan (R.O.C.)
+        </div>
+    </footer>
 
-        <script>
-            $('#text-carousel').carousel({
-                interval: 2000
-            })
-        </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('#text-carousel').carousel({
+            interval: 2000
+        })
+    </script>
 </body>
 
 </html>
+
+<!-- Note -->
+<!-- btn-group, badge-ouline改紫色， a的hover改紫色，問老師carousel或是jerry-style -->
